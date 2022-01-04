@@ -1,5 +1,4 @@
 React homework №1
-
 https://itfreshman2021.github.io/goit-react-hw-01-components/
 
 
@@ -12,6 +11,9 @@ https://itfreshman2021.github.io/goit-react-hw-01-components/
 
 
 
+
+
+=====================================================================================================================================================
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

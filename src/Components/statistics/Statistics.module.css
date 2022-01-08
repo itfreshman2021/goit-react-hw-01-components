@@ -23,16 +23,16 @@
   width: 20%;
   margin: 0;
   padding: 0;
+  outline: solid 1px;
 }
 
-li.item {
+.item {
   display: block;
   width: 20%;
   list-style: none;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-right: none;
 }
 
 .label {

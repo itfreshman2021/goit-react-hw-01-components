@@ -23,7 +23,7 @@
 .avatar {
   display: block;
   border-radius: 50%;
-  overflow: hidden;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -54,14 +54,14 @@
   border-bottom-left-radius: 7px;
 }
 
-li {
+.item {
   display: block;
   width: 33%;
   list-style: none;
   text-align: center;
 }
 
-li:not(:last-child) {
+.item:not(:last-child) {
   border-right: rgb(202, 200, 175) solid 2px;
 }
 

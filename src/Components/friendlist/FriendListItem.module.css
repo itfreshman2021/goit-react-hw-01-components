@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  list-style: none;
+
+  background-color: white;
+  padding: 2%;
+  margin-bottom: 1%;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.statusIsOnline {
+  background-color: green;
+}
+
+.avatar {
+  display: block;
+  width: 25%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 10%;
+  border-radius: 7px;
+  object-fit: cover;
+  background-color: rgb(209, 205, 205);
+}
+
+.name {
+  font-weight: 700;
+}

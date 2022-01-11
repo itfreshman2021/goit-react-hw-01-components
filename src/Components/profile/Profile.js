@@ -4,6 +4,7 @@ import s from './Profile.module.css';
 import defaultProfileAvatar from '../defaultProfileAvatar.png';
 
 const Profile = ({ name, tag, location, avatar = defaultProfileAvatar, stats }) => {
+  const { followers, views, likes } = stats;
   return (
     <div className={s.profile}>
       <div className={s.description}>
@@ -16,15 +17,15 @@ const Profile = ({ name, tag, location, avatar = defaultProfileAvatar, stats }) 
       <ul className={s.stats}>
         <li className={s.item}>
           <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{stats.followers}</span>
+          <span className={s.quantity}>{followers}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Views</span>
-          <span className={s.quantity}>{stats.views}</span>
+          <span className={s.quantity}>{views}</span>
         </li>
         <li className={s.item}>
           <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{stats.likes}</span>
+          <span className={s.quantity}>{likes}</span>
         </li>
       </ul>
     </div>
@@ -33,13 +34,13 @@ const Profile = ({ name, tag, location, avatar = defaultProfileAvatar, stats }) 
 
 Profile.propTypes = {
   avatar: PropTypes.string,
-  name: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
 export default Profile;
